@@ -43,7 +43,7 @@ const Invoices = () => {
   ];
 
   return (
-    <Box m="20px">
+    <div className=" m-[20px] w-fit min-w-[1420px]">
       <Header title="INVOICES" subtitle="List of Invoice Balances" />
       <Box
         m="40px 0 0 0"
@@ -78,7 +78,7 @@ const Invoices = () => {
       <DataGrid checkboxSelection rows={mockDataInvoices} columns={columns} autoHeight 
         components={{Toolbar:GridToolbar}}/>
     </Box>
-  </Box>
+  </div>
   );
 };
 
