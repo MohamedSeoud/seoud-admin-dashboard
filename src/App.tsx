@@ -1,16 +1,23 @@
 import Routes from './routes'
 import './App.css';
+import { ThemeContextProvider, useMode } from './them';
+import { ThemeProvider } from '@emotion/react';
+import { CssBaseline } from '@mui/material';
 
 
 function App() {
+  const[ theme ]  = useMode();
+
 
   return (
-    <div className=' bg-black text-white w-screen h-screen bg-black'>
-    <Routes/>
-    <div className=' text-red-600 bg-black w-full text  text-center flex justify-center items-center font-bold'>
-      ddssdvs
-    </div>
-    </div>
+    <>
+      <ThemeContextProvider >
+        <ThemeProvider theme={theme}>
+          <CssBaseline/>
+          <Routes/>
+      </ThemeProvider>
+    </ThemeContextProvider>
+    </>
   )
 }
 
