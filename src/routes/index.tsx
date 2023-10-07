@@ -4,6 +4,7 @@ import Dashboard from "../pages/Dashboard";
 import Team from "../pages/Team";
 import Contacts from "../pages/Contacts";
 import Invoices from "../pages/Invoices";
+import Form from "../pages/Form";
 
 export default function Routes() {
 
@@ -27,6 +28,10 @@ export default function Routes() {
             {
                 path:'/invoices',
                 element:<Invoices/>
+            },
+            {
+                path:'/form',
+                element:<Form/>
             }
         ]
         }

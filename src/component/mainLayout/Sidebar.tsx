@@ -121,7 +121,7 @@ function Sidebar() {
                   fontWeight="bold"
                   sx={{ m: "10px 0 0 0" }}
                 >
-                  Ed Roh
+                  Mohammed Seoud
                 </Typography>
 
               </Box>
